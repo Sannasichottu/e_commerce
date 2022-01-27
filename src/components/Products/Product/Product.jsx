@@ -5,19 +5,12 @@ import { AddShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
 
 const Product = ({ product }) => {
-  const classes = useStyles();
-   
+  const classes = useStyles();   
+
   return(
     <Card className={classes.root}>
-      {/* <CardMedia className={classes.media} image={product.image} title={product.name} /> */}
-        
-
-        <CardMedia
-        component="img"
-        height="194"
-        image={product.image}
-        alt="Paella dish"
-      />
+      <CardMedia className={classes.media} image={product.media.source} title={product.name} />
+     {/* <CardMedia component="img" height="194" image={product.image} alt="Paella dish" /> */} 
         
         <CardContent>
           <div className={classes.cardContent}>
@@ -25,7 +18,7 @@ const Product = ({ product }) => {
                {product.name}
               </Typography>
               <Typography variant="h5">
-               {product.price}
+               {product.price.formatted_with_symbol}
               </Typography>
           </div>
               <Typography variant="body2" color="textSecondary">{product.description} </Typography>
