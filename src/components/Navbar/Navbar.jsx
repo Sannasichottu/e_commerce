@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Badge, Typography } from '@material-ui/core'; //MenuIteam , Menu
+import { AppBar, ToolBar, IconButton, Badge, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 
 import logo from '../../assets/commerce.png';
@@ -11,7 +11,7 @@ const Navbar = () => {
     return(
         <>
             <AppBar position ="fixed" className={classes.appBar} color="inherit">
-                <Toolbar>
+                <ToolBar>
                 <Typography variant="h6" className={classes.title} color="inherit" >
                         <img src={logo} alt="Commerce.js" height="25px" className={classes.image} />
                         Commerce.js
@@ -24,7 +24,7 @@ const Navbar = () => {
                           </Badge>
                         </IconButton>
                     </div>
-                </Toolbar>
+                </ToolBar>
             </AppBar>
         </>
     )

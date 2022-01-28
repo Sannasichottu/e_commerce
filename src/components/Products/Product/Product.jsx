@@ -10,7 +10,7 @@ const Product = ({ product }) => {
   return(
     <Card className={classes.root}>
       <CardMedia className={classes.media} image={product.media.source} title={product.name} />
-     {/* <CardMedia component="img" height="194" image={product.image} alt="Paella dish" /> */} 
+     {/*<CardMedia component="img" height="194" image={product.image} alt="Paella dish" /> */}
         
         <CardContent>
           <div className={classes.cardContent}>
